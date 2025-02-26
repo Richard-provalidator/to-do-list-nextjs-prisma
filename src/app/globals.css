@@ -14,4 +14,16 @@
   .button-style {
     @apply w-full p-3 bg-green-600 text-white rounded hover:bg-green-500 transition;
   }
+
+  .inner-container {
+    @apply min-h-screen flex flex-col items-center justify-center p-8 bg-gray-50;
+  }
+
+  .h1-style {
+    @apply text-3xl font-bold text-gray-800;
+  }
+
+  .form-style {
+    @apply mt-6 w-full max-w-md space-y-4;
+  }
 }
