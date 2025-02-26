@@ -35,7 +35,7 @@ export default function TodosClient() {
     if (!user || newTodo.trim() === "") return;
 
     try {
-      const res = await fetch("/api/todos", {
+      const res = await fetch(`/api/todos`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ content: newTodo, userId: user.id }),
