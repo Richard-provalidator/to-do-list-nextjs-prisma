@@ -38,6 +38,7 @@ export async function POST(request: NextRequest) {
       success: true,
       data: userData,
     });
+    // @typescript-eslint/no-unused-vars
   } catch (error) {
     return NextResponse.json(
       { success: false, error: "로그인에 실패했습니다." },
